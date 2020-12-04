@@ -12,22 +12,15 @@ public class ComplexNumber {
     public static ComplexNumber square(ComplexNumber c) {
         double real = c.real;
         double imaginary = c.imaginary;
-        return new ComplexNumber(Math.pow(real,real) - Math.pow(imaginary,imaginary) , 2 * real * imaginary);
+        return new ComplexNumber(Math.pow(real, 2) - Math.pow(imaginary, 2), 2 * real * imaginary);
     }
 
     public static ComplexNumber sum(ComplexNumber c1, ComplexNumber c2) {
         return new ComplexNumber(c1.real + c2.real, c1.imaginary + c2.imaginary);
     }
 
-    public static double absolute(ComplexNumber c){
-        return Math.sqrt(c.real*c.real + c.imaginary*c.imaginary);
+    public static double absolute(ComplexNumber c) {
+        return Math.sqrt(Math.pow(c.real,2) + Math.pow(c.imaginary, 2));
     }
 
-//    public double getReal() {
-//        return real;
-//    }
-//
-//    public double getImaginary() {
-//        return imaginary;
-//    }
 }

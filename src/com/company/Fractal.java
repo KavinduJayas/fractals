@@ -4,16 +4,30 @@ import java.util.HashMap;
 
 public class Fractal {
     public static final int ITERATIONS = 1000;
-    public static HashMap<String, Set> sets =
-            new HashMap<String, Set>();
 
     public static void main(String[] args) {
-        sets.put("Mandelbrot",new Mandelbrot());
-        sets.put("Julia",new Julia());
-        Set obj = sets.get(args[0]);
-        if(obj == null) {
-            System.out.println("Usage:java Fractal [Mandelbrot | Julia] [args]");
-            return;
+        Mandelbrot mb;
+        Julia j;
+
+//        ComplexNumber c = new ComplexNumber(8,6);
+//        ComplexNumber d = new ComplexNumber(8,6);
+//        System.out.println(ComplexNumber.absolute(ComplexNumber.sum(c,d)));
+
+        if (args.length > 0) {
+            if (args[0].equals("Mandelbrot")){
+                mb = new Mandelbrot();
+                mb.handleArguments(args);
+                mb.generateFractal();}
+            else if (args[0].equals("Julia")) {
+                j = new Julia();
+                j.handleArguments(args);
+                j.generateFractal();
+            }
+            else {
+                System.out.println("Invalid arguments!\nUsage:java Fractal [Mandelbrot | Julia] [args]");
+            }
+        } else {
+            System.out.println("No arguments given!\nUsage:java Fractal [Mandelbrot | Julia] [args]");
         }
 
     }
