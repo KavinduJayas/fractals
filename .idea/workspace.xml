@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/main" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ead45e00-ba2f-48d4-8312-9ae5c1a0ffbd" name="Default Changelist" comment="basic functionality">
+      <change beforePath="$PROJECT_DIR$/src/com/company/ComplexNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ComplexNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Fractal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Fractal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Julia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Julia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Mandelbrot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Mandelbrot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Panel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Panel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Point.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Set.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Set.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1l0UQFbeFwxE2PY4eXS4I3clFlA" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Fractal" />
+      <module name="fractals" />
+      <option name="PROGRAM_PARAMETERS" value="Mandelbrot" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ead45e00-ba2f-48d4-8312-9ae5c1a0ffbd" name="Default Changelist" comment="" />
+      <created>1606733485466</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606733485466</updated>
+    </task>
+    <task id="LOCAL-00001" summary="basic structure">
+      <created>1607008887164</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607008887164</updated>
+    </task>
+    <task id="LOCAL-00002" summary="basic functionality">
+      <created>1607083082483</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1607083082483</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="basic structure" />
+    <MESSAGE value="basic functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="basic functionality" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="420" y="156" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607143891847">
+      <screen x="0" y="0" width="1920" height="1030" />
+    </state>
+    <state x="420" y="156" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1030@0.0.1920.1030" timestamp="1607143891847" />
+    <state x="726" y="156" width="468" height="755" key="#com.intellij.ide.util.MemberChooser" timestamp="1607071047031">
+      <screen x="0" y="0" width="1920" height="1030" />
+    </state>
+    <state x="726" y="156" width="468" height="755" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1030@0.0.1920.1030" timestamp="1607071047031" />
+    <state width="1860" height="247" key="GridCell.Tab.0.bottom" timestamp="1607146177801">
+      <screen x="0" y="0" width="1920" height="1030" />
+    </state>
+    <state width="1860" height="247" key="GridCell.Tab.0.bottom/0.0.1920.1030@0.0.1920.1030" timestamp="1607146177801" />
+    <state width="1860" height="247" key="GridCell.Tab.0.center" timestamp="1607146177800">
+      <screen x="0" y="0" width="1920" height="1030" />
+    </state>
+    <state width="1860" height="247" key="GridCell.Tab.0.center/0.0.1920.1030@0.0.1920.1030" timestamp="1607146177800" />
+    <state width="1860" height="247" key="GridCell.Tab.0.left" timestamp="1607146177800">
+      <screen x="0" y="0" width="1920" height="1030" />
+    </state>
+    <state width="1860" height="247" key="GridCell.Tab.0.left/0.0.1920.1030@0.0.1920.1030" timestamp="1607146177800" />
+    <state width="1860" height="247" key="GridCell.Tab.0.right" timestamp="1607146177801">
+      <screen x="0" y="0" width="1920" height="1030" />
+    </state>
+    <state width="1860" height="247" key="GridCell.Tab.0.right/0.0.1920.1030@0.0.1920.1030" timestamp="1607146177801" />
+    <state width="1860" height="307" key="GridCell.Tab.1.bottom" timestamp="1607022473181">
+      <screen x="0" y="0" width="1920" height="1030" />
+    </state>
+    <state width="1860" height="307" key="GridCell.Tab.1.bottom/0.0.1920.1030@0.0.1920.1030" timestamp="1607022473181" />
+    <state width="1860" height="307" key="GridCell.Tab.1.center" timestamp="1607022473181">
+      <screen x="0" y="0" width="1920" height="1030" />
+    </state>
+    <state width="1860" height="307" key="GridCell.Tab.1.center/0.0.1920.1030@0.0.1920.1030" timestamp="1607022473181" />
+    <state width="1860" height="307" key="GridCell.Tab.1.left" timestamp="1607022473181">
+      <screen x="0" y="0" width="1920" height="1030" />
+    </state>
+    <state width="1860" height="307" key="GridCell.Tab.1.left/0.0.1920.1030@0.0.1920.1030" timestamp="1607022473181" />
+    <state width="1860" height="307" key="GridCell.Tab.1.right" timestamp="1607022473181">
+      <screen x="0" y="0" width="1920" height="1030" />
+    </state>
+    <state width="1860" height="307" key="GridCell.Tab.1.right/0.0.1920.1030@0.0.1920.1030" timestamp="1607022473181" />
+    <state x="460" y="178" key="Vcs.Push.Dialog.v2" timestamp="1607083101701">
+      <screen x="0" y="0" width="1920" height="1030" />
+    </state>
+    <state x="460" y="178" key="Vcs.Push.Dialog.v2/0.0.1920.1030@0.0.1920.1030" timestamp="1607083101701" />
+    <state x="380" y="152" width="1160" height="833" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1607061855595">
+      <screen x="0" y="0" width="1920" height="1030" />
+    </state>
+    <state x="380" y="152" width="1160" height="833" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1030@0.0.1920.1030" timestamp="1607061855595" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
