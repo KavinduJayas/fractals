@@ -1,24 +1,32 @@
-import javax.swing.*;
-import java.awt.*;
-import java.awt.image.BufferedImage;
+import java.util.ArrayList;
 
-public class Mandelbrot extends Set {
+public class Mandelbrot extends Set implements Runnable {
     private int iterations = DEFAULT_ITER;
-    private Panel panel;
+    private static Panel panel;
     // a < real axis < b  AND c < imaginary axis <d
     private float a;
     private float b;
     private float c;
     private float d;
+    private int i;
 
-    public void Mandelbrot() {
+
+    public Mandelbrot(int i, Panel panel) {
+
+        this.i = i;
+        this.panel = panel;
     }
 
-    @Override
+    public Mandelbrot() {
+
+    }
+
     public void handleArguments(String args[]) {
         if (args.length == 1) {//only the set name is given
             panel = new Panel(image);
-            this.generateFractal();
+            super.setPanel(panel);//setting the panel of Set class
+            generateMandelbrot();
+            super.display();//display content
         } else if (args.length == 5) {//if, only the region of interest is given
             try {//trying to set region of interest
                 a = Float.parseFloat(args[1]);
@@ -29,8 +37,12 @@ public class Mandelbrot extends Set {
                 System.out.println("Mandelbrot arguments must be numeric!");
                 return;
             }
+
             panel = new Panel(image, a, b, c, d);
-            this.generateFractal();
+            super.setPanel(panel);//setting the panel of Set class
+            generateMandelbrot();
+            super.display();//display content
+
         } else if (args.length == 6) {//if all parameters are given
             try {//trying to set region of interest
                 a = Float.parseFloat(args[1]);
@@ -42,32 +54,51 @@ public class Mandelbrot extends Set {
                 System.out.println("Mandelbrot arguments must be numeric!");
                 return;
             }
+
             panel = new Panel(image, a, b, c, d);
-            this.generateFractal();
+            super.setPanel(panel);//setting the panel of Set class
+            generateMandelbrot();
+            super.display();//display content
+
         } else {//invalid number of arguments
             System.out.println("Invalid number of arguments!\nUsage :Fractal Mandelbrot [a b c d] [n]");
         }
     }
 
-    @Override
-    public void generateFractal() {
+    public static void generateMandelbrot() {
+        ArrayList<Thread> threadList = new ArrayList<Thread>();
+        int i = 0;
+        for (i = 0; i < DEFAULT_WIDTH; i++) {//iteration over each pixel the image
 
-        super.setPanel(panel);//setting the panel of Set class
+            Thread t = new Thread(new Mandelbrot(i, panel));
+            t.start();
+            threadList.add(t);
 
-        for (int i = 0; i < DEFAULT_WIDTH; i++) {//iteration over each pixel the image
-            for (int j = 0; j < DEFAULT_HEIGHT; j++) {
-
-                //getting the relevent real and imaginaray coordinates of the pixel 
-                //based on the region of interest
-                double x = panel.getX(i);
-                double y = panel.getY(j);
-                //asking a color from the iterator (z note = 0  and C value is the complex coordinate)
-                int color = super.iterator(new ComplexNumber(0, 0), new ComplexNumber(x, y), iterations);
-
-                image.setRGB(i, j, color);
-            }
+            if (threadList.size() % 25 == 0)//joining the threads and limiting the threads run in parallel.
+                for (Thread thread : threadList) {
+                    try {
+                        thread.join();
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
         }
-        super.display();//display content
+
+        threadList.clear();
+    }
+
+    @Override
+    public void run() {
+        for (int j = 0; j < DEFAULT_HEIGHT; j++) {
+            //getting the relevant real and imaginary coordinates of the pixel
+            //based on the region of interest
+            double x = panel.getX(i);
+            double y = panel.getY(j);
+            //asking a color from the iterator (z note = 0  and C value is the complex coordinate)
+            int color = iterator(new ComplexNumber(0, 0), new ComplexNumber(x, y), iterations);
+
+            image.setRGB(i, j, color);
+        }
     }
 
 
